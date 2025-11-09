@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --color-neutral-blue : hsl(243, 100%, 69%, 100%);
+
+    --color-neutral-violet :#a1a3d8;
+    --color-neutral-white : #e8ebf7;
+    --color-neutral-light : #f3f4fa;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+
+@keyframes pop-in {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-pop-in {
+    animation: pop-in 0.2s ease backwards;
+}
